@@ -539,7 +539,8 @@ namespace Fungus
                     } 
                     else
                     {
-                        yield return new WaitForSeconds(1f / currentWritingSpeed);
+                        yield return null;
+                        timeAccumulator = Time.deltaTime;
                     }
                 }
             }
